@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.form {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.switch-field {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+}
+
+.switch-field input {
+    display: none;
+}
+
+.switch-field label {
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.switch-field input:checked + label {
+    background-color: #5c6bc0;
+    color: white;
+    font-weight: bold;
+}
+
+button.submit {
+    background-color: #42a5f5;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+button.submit:hover {
+    background-color: #1e88e5;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 15px 25px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #1565c0;
+    text-align: center;
+}
+
+.img {
+    height: 150px;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
