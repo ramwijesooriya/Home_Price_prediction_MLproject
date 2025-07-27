@@ -27,7 +27,9 @@ function onClickedEstimatePrice() {
     var location = document.getElementById("uiLocation").value;
     var estPrice = document.getElementById("result");
 
-    var url = "http://127.0.0.1:3000/predict_home_price";
+    // var url = "http://127.0.0.1:3000/predict_home_price";
+    var url = "/api/predict_home_price";
+
 
     $.post(url, {
         total_sqft: parseFloat(sqft),
@@ -44,7 +46,11 @@ function onClickedEstimatePrice() {
 function onPageLoad() {
     console.log("document loaded");
 
-    var url = "http://127.0.0.1:3000/get_location_names"; // ✅ use correct port
+    // var url = "http://127.0.0.1:3000/get_location_names"; // ✅ use correct port
+    var url = "/api/get_location_names"; // ✅ use correct port
+
+
+    var url
 
     $.get(url, function (data, status) {
         console.log("got response for get_location_names request");
