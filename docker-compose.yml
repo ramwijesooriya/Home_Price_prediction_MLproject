@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # The Backend API Service
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: ramwijesooriya/bhp-backend:latest  
+    container_name: bhp-backend
+    restart: unless-stopped
+    # On your Mac M3, the model file (pickle) might have issues
+    # if it was created on a different architecture (like Intel).
+    # This line ensures it builds for a standard Linux environment.
+    platform: linux/amd64
+
+  # The Frontend Web Server
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: ramwijesooriya/bhp-frontend:latest
+    container_name: bhp-frontend
+    restart: unless-stopped
+    ports:
+      # Map your host machine's port 8080 to the container's port 80
+      - "8080:80"
+    depends_on:
+      # Wait for the backend to be ready before starting
+      - backend

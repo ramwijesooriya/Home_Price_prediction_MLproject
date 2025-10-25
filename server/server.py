@@ -30,4 +30,4 @@ def predict_home_price():
 
 if __name__ == "__main__":
     print("Starting python flask server for home price prediction ")
-    app.run(port=3000)
+    app.run(port=5000)

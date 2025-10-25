@@ -1,0 +1,13 @@
+# Core Web Framework
+Flask
+# The server.py uses request.form, jsonify, and possibly other core Flask features
+
+# Data Handling and Model Loading
+numpy
+# Essential for numerical operations, especially with Scikit-learn input arrays
+pandas
+# Often used for data manipulation, especially when processing features
+scikit-learn
+# Required to load the pre-trained model artifact (bengaluru_home_prices_model.pickle)
+# and use its prediction methods.
+gunicorn

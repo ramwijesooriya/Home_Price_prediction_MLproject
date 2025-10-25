@@ -1,1 +1,4 @@
 .ipynb_checkpoints/
+.git
+.gitignore
+.vscode
