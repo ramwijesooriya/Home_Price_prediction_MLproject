@@ -20,13 +20,6 @@ http://13.60.99.54:8080/
 
 ---
 
-## 🎥 Project Demo
-
-(Your 10-15 second GIF showing the app in action)
-![Project Demo GIF](YOUR_LINK_TO_DEMO_GIF.gif)
-
----
-
 ## 🏛️ Application Architecture
 
 This project is not just a single application but a system of microservices, containerized with Docker and deployed with a fully automated workflow.
